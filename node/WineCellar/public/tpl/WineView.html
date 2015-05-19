@@ -18,7 +18,26 @@
                                    disabled/>
                         </div>
                     </div>
+                     <div class="control-group">
+                        <label for="year" class="control-label">CEGEP:</label>
 
+                        <div class="controls">
+                            <select class="input-small" id="year" name="year" value="<%= year %>">
+                                <option
+                                <%= year == 2012?'selected':'' %>>2012</option>
+                                <option
+                                <%= year == 2011?'selected':'' %>>2011</option>
+                                <option
+                                <%= year == 2010?'selected':'' %>>2010</option>
+                                <option
+                                <%= year == 2009?'selected':'' %>>2009</option>
+                                <option
+                                <%= year == 2008?'selected':'' %>>2008</option>
+                                <option
+                                <%= year == 2007?'selected':'' %>>2007</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="control-group">
                         <label for="year" class="control-label">Session:</label>
 
