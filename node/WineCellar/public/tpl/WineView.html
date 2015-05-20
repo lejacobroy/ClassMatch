@@ -4,7 +4,7 @@
 
         <fieldset>
 
-            <legend>Wine Details</legend>
+            <legend>Détails du cours</legend>
             <br/>
 
             <div class="row">
@@ -18,93 +18,110 @@
                                    disabled/>
                         </div>
                     </div>
-                     <div class="control-group">
-                        <label for="year" class="control-label">CEGEP:</label>
 
-                        <div class="controls">
-                            <select class="input-small" id="year" name="year" value="<%= year %>">
-                                <option
-                                <%= year == 2012?'selected':'' %>>2012</option>
-                                <option
-                                <%= year == 2011?'selected':'' %>>2011</option>
-                                <option
-                                <%= year == 2010?'selected':'' %>>2010</option>
-                                <option
-                                <%= year == 2009?'selected':'' %>>2009</option>
-                                <option
-                                <%= year == 2008?'selected':'' %>>2008</option>
-                                <option
-                                <%= year == 2007?'selected':'' %>>2007</option>
-                            </select>
-                        </div>
-                    </div>
                     <div class="control-group">
-                        <label for="year" class="control-label">Session:</label>
-
+                        <label for="CEGEP" class="control-label">CEGEP:</label>
                         <div class="controls">
-                            <select class="input-small" id="year" name="year" value="<%= year %>">
+                            <select class="input-small" id="CEGEP" name="CEGEP" value="<%= CEGEP %>">
                                 <option
-                                <%= year == 2012?'selected':'' %>>2012</option>
+                                <%= CEGEP == 2012?'selected':'' %>>2012</option>
                                 <option
-                                <%= year == 2011?'selected':'' %>>2011</option>
+                                <%= CEGEP == 2011?'selected':'' %>>2011</option>
                                 <option
-                                <%= year == 2010?'selected':'' %>>2010</option>
+                                <%= CEGEP == 2010?'selected':'' %>>2010</option>
                                 <option
-                                <%= year == 2009?'selected':'' %>>2009</option>
+                                <%= CEGEP == 2009?'selected':'' %>>2009</option>
                                 <option
-                                <%= year == 2008?'selected':'' %>>2008</option>
+                                <%= CEGEP == 2008?'selected':'' %>>2008</option>
                                 <option
-                                <%= year == 2007?'selected':'' %>>2007</option>
+                                <%= CEGEP == 2007?'selected':'' %>>2007</option>
                             </select>
                         </div>
                     </div>
 
 
                     <div class="control-group">
-                        <label for="grapes" class="control-label">Jour de la semaine:</label>
-
+                        <label for="session" class="control-label">Session:</label>
                         <div class="controls">
-                            <input type="text" id="grapes" name="grapes" value="<%= grapes %>"/>
+                            <select class="input-small" id="session" name="session" value="<%= session %>">
+                                <option
+                                <%= session == 2012?'selected':'' %>>2012</option>
+                                <option
+                                <%= session == 2011?'selected':'' %>>2011</option>
+                                <option
+                                <%= session == 2010?'selected':'' %>>2010</option>
+                                <option
+                                <%= session == 2009?'selected':'' %>>2009</option>
+                                <option
+                                <%= session == 2008?'selected':'' %>>2008</option>
+                                <option
+                                <%= session == 2007?'selected':'' %>>2007</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="control-group">
+                        <label for="nomDuCours" class="control-label">Nom du Cours:</label>
+                        <div class="controls">
+                            <input type="text" id="nomDuCours" name="nomDuCours" value="<%= nomDuCours %>"/>
                             <span class="help-inline"></span>
                         </div>
                     </div>
 
-                    <div class="control-group">
-                        <label for="country" class="control-label">Heure:</label>
 
+                    <div class="control-group">
+                        <label for="jour" class="control-label">Jour de la semaine:</label>
                         <div class="controls">
-                            <input type="text" id="country" name="country" value="<%= country %>"/>
-                            <span class="help-inline"></span>
+                            <select class="input-small" id="jour" name="jour" value="<%= jour %>">
+                                <option
+                                <%= jour == 1?'selected':'' %>>Lundi</option>
+                                <option
+                                <%= session == 2?'selected':'' %>>Mardi</option>
+                                <option
+                                <%= session == 3?'selected':'' %>>Mercredi</option>
+                                <option
+                                <%= session == 4?'selected':'' %>>Jeudi</option>
+                                <option
+                                <%= session == 5?'selected':'' %>>Vendredi</option>
+                            </select>
                         </div>
                     </div>
 
-                    <div class="control-group">
-                        <label for="region" class="control-label">Groupe:</label>
 
-                        <div class="controls">
-                            <input type="text" id="region" name="region" value="<%= region %>"/>
-                        </div>
-                    </div>
                     <div class="control-group">
-                        <label for="name" class="control-label">Professeur:</label>
-
+                        <label for="heure" class="control-label">Heure:</label>
                         <div class="controls">
-                            <input type="text" id="name" name="name" value="<%= name %>"/>
-                            <span class="help-inline"></span>
+                            <input type="text" id="heure" name="heure" value="<%= heure %>"/>
                         </div>
                     </div>
 
-                    <div class="control-group">
-                        <label for="description" class="control-label">FBID:</label>
 
+                    <div class="control-group">
+                        <label for="groupe" class="control-label">Groupe:</label>
                         <div class="controls">
-                            <input type="text" id="description" name="description" value="<%= description %>"/>
+                            <input type="text" id="groupe" name="groupe" value="<%= groupe %>"/>
                         </div>
                     </div>
 
+
+                    <div class="control-group">
+                        <label for="prof" class="control-label">Professeur(e):</label>
+                        <div class="controls">
+                            <input type="text" id="prof" name="prof" value="<%= prof %>"/>
+                        </div>
+                    </div>
+
+
+                    <div class="control-group">
+                        <label for="fbuid" class="control-label">FBUID:</label>
+                        <div class="controls">
+                            <input type="text" id="fbuid" name="fbuid" value="<%= fbuid %>"/>
+                        </div>
+                    </div>
                 </div>
 
-            
+
 
             </div>
 

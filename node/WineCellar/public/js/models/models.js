@@ -4,7 +4,7 @@ window.Wine = Backbone.Model.extend({
 
     idAttribute: "_id",
 
-    initialize: function () {
+   /* initialize: function () {
         this.validators = {};
 
         this.validators.name = function (value) {
@@ -19,7 +19,7 @@ window.Wine = Backbone.Model.extend({
             return value.length > 0 ? {isValid: true} : {isValid: false, message: "You must enter a country"};
         };
     },
-
+*/
     validateItem: function (key) {
         return (this.validators[key]) ? this.validators[key](this.get(key)) : {isValid: true};
     },
@@ -43,13 +43,14 @@ window.Wine = Backbone.Model.extend({
 
     defaults: {
         _id: null,
-        name: "",
-        grapes: "",
-        country: "USA",
-        region: "California",
-        year: "",
-        description: "",
-        picture: null
+        CEGEP: "",
+        session: "3",
+        nomDuCours: "Philosophie 3",
+        jour: "3",
+        heure: "8h10 à 10h10",
+        groupe: "1100",
+        prof: "xyz",
+        fbuid: ""
     }
 });
 
