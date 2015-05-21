@@ -114,9 +114,11 @@
 
 
                     <div class="control-group">
-                        <label for="fbuid" class="control-label">FBUID:</label>
+                        <label for="fbId" class="control-label">FBId:</label>
+
                         <div class="controls">
-                            <input type="text" id="fbuid" name="fbuid" value="<%= fbuid %>"/>
+                            <input id="fbId" name="fbid" type="text" value="<%= fbid === null ? '' : fbid %>"
+                                   disabled/>
                         </div>
                     </div>
                 </div>

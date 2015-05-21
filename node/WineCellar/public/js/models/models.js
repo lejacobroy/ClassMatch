@@ -50,7 +50,7 @@ window.Wine = Backbone.Model.extend({
         heure: "8h10 à 10h10",
         groupe: "1100",
         prof: "xyz",
-        fbuid: ""
+        fbid: ""
     }
 });
 

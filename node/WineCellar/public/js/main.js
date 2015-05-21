@@ -1,12 +1,14 @@
 var AppRouter = Backbone.Router.extend({
 
     routes: {
-        ""                  : "home",
-        "wines"	            : "list",
+        ""                  :"home",
+        "cours"	            : "list",
         "wines/page/:page"	: "list",
         "cours/ajouter"         : "addWine",
         "cours/:id"         : "wineDetails",
-        "about"             : "about"
+        "about"             : "about",
+
+       
     },
 
     initialize: function () {
@@ -18,6 +20,7 @@ var AppRouter = Backbone.Router.extend({
         if (!this.homeView) {
             this.homeView = new HomeView();
         }
+
         $('#content').html(this.homeView.el);
         this.headerView.selectMenuItem('home-menu');
     },
@@ -52,6 +55,8 @@ var AppRouter = Backbone.Router.extend({
         $('#content').html(this.aboutView.el);
         this.headerView.selectMenuItem('about-menu');
     }
+
+
 
 });
 
